@@ -1,0 +1,26 @@
+To adhere to the Single Responsibility Principle (SRP), you can break down the `bakeAndSellPies` 
+function into smaller, more focused functions that each have a single responsibility. 
+Here's a high-level breakdown of how you can refactor it:
+
+1. **findRecipe(pieType)**: This function can be responsible for finding the recipe for a given `pieType` 
+from the `recipes` object.
+
+2. **combineIngredients(recipe)**: This function can handle the logic for combining the ingredients 
+based on a given recipe and print the combination message.
+
+3. **bakePie(pieType, index)**: This function can handle the baking of a single pie of a specific 
+`pieType` and print a message indicating which pie was baked.
+
+4. **calculateCost(recipe, pieQuantity)**: This function can compute the cost per pie and the 
+total cost based on the recipe and quantity of pies.
+
+5. **calculateRevenue(totalCost, profitMargin)**: This function can calculate the total revenue 
+based on the total cost and a specified profit margin.
+
+6. **printResults(pieQuantity, revenue, costPerPie)**: This function can handle the 
+responsibility of printing the results, such as the number of pies sold, revenue, and cost per pie.
+
+By breaking the original function into these smaller functions, you achieve a 
+separation of concerns and each function has a clear, single responsibility. 
+This makes the code easier to understand, maintain, and test, as well as allowing 
+for potential reuse of individual functions in other parts of your codebase.
