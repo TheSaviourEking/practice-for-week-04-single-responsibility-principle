@@ -56,6 +56,7 @@ function bakeAndSellPies(pieType, pieQuantity, profitMargin) {
 
 /**
  * findRecipe - return recipe 
+ * 
  * @param {string} pieType 
  * @returns {0bject} 
  */
@@ -65,6 +66,7 @@ function findRecipe(pieType) {
 
 /**
  * bakePies - bakes the pies
+ * 
  * @param {array} recipe 
  * @param {string} pieType 
  * @param {number} pieQuantity 
@@ -81,6 +83,7 @@ function bakePies(recipe, pieType, pieQuantity) {
 
 /**
  * findCost - calculates the cost of each pie
+ * 
  * @param {array} recipe 
  * @returns {number} cost of the pie;
  */
